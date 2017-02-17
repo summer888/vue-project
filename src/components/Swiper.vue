@@ -4,7 +4,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
               <img src="../assets/guide/1.png">
-              <a href="#/index">
+              <a href="#/home">
                 <img src="../assets/guide/5.png" id="swiper-img">
               </a>
               
