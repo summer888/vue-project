@@ -1,23 +1,46 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+      <router-view></router-view>
+      <div id="foot">
+        <a href="#/home"><img src="./assets/icon/1-1.jpg"><p>首页</p></a>
+        <a href="#/type"><img src="./assets/icon/2.jpg"><p>分类</p></a>
+        <a href="#/shopcar"><img src="./assets/icon/3.jpg"><p>购物车</p></a>
+        <a href="#/my"  ><img src="./assets/icon/4.jpg"><p>我的</p></a>
+      </div>
+
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  export default {
+    name: 'app'
+  }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  *{
+    margin:0;
+    padding:0;
+  }
+  body{
+    font-size:25px;
+  }
+   #foot{
+      width:100%;
+      background:#eee;
+      position:fixed;
+      bottom:0;
+      left:0;
+   }
+   #foot>a{
+    float:left;
+    width:25%;
+    text-align:center;
+    color:#ccc;
+    font-size:0.8rem; 
+   }
+   #foot>a>img{
+    width:25%;
+    margin-top:0.5rem;
+   }
 </style>
