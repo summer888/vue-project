@@ -111,7 +111,9 @@
        loop: true,
        pagination: '.swiper-pagination',
        nextButton: '.swiper-button-next',
-       prevButton: '.swiper-button-prev'
+       prevButton: '.swiper-button-prev',
+       paginationClickable :true,
+       autoplayDisableOnInteraction : false,
      })
    }
   }

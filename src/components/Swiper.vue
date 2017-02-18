@@ -26,11 +26,10 @@ export default {
      var mySwiper = new Swiper('.swiper-container', {
        direction: 'horizontal',
        autoplay:2000,
-       loop: true,
        pagination: '.swiper-pagination',
        nextButton: '.swiper-button-next',
        prevButton: '.swiper-button-prev',
-       paginationClickable :true
+       autoplayStopOnLast:true,
      })
    }
 }
