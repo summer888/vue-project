@@ -3,15 +3,16 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-              <img src="../assets/guide/1.png">
-              <a href="#/home">
-                <img src="../assets/guide/5.png" id="swiper-img">
-              </a>
-              
+              <img src="../assets/guide/1.png">              
           </div>
           <div class="swiper-slide"><img src="../assets/guide/2.png"></div>
           <div class="swiper-slide"><img src="../assets/guide/3.png"></div>
-          <div class="swiper-slide"><img src="../assets/guide/4.png"></div>
+          <div class="swiper-slide">
+            <img src="../assets/guide/4.png">
+            <a href="#/home">
+                <img src="../assets/guide/5.png" id="swiper-img">
+            </a>
+          </div>
         </div>
       </div>
   </div>
@@ -19,7 +20,19 @@
 <script>
 require('../../static/swiper.min.css')
 export default {
-  name: 'swiper'
+  name: 'swiper',
+   components: {},
+      mounted () {
+     var mySwiper = new Swiper('.swiper-container', {
+       direction: 'horizontal',
+       autoplay:2000,
+       loop: true,
+       pagination: '.swiper-pagination',
+       nextButton: '.swiper-button-next',
+       prevButton: '.swiper-button-prev',
+       paginationClickable :true
+     })
+   }
 }
 
 </script>
