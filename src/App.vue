@@ -17,14 +17,7 @@
   }
 </script>
 
-<style>
-  *{
-    margin:0;
-    padding:0;
-  }
-  body{
-    font-size:25px;
-  }
+<style lang="scss">
    #foot{
       width:100%;
       background:#eee;
@@ -37,10 +30,13 @@
     width:25%;
     text-align:center;
     color:#ccc;
-    font-size:0.8rem; 
+    font-size:0.5rem; 
+   }
+   #foot>a:hover{
+    color:#7faf1d;
    }
    #foot>a>img{
     width:25%;
-    margin-top:0.5rem;
+    margin-top:0.3rem;
    }
 </style>
