@@ -1,0 +1,14 @@
+[
+	{
+    "goodId":"0401",
+    "name":"A级-野苹果（大）",
+    "imgUrl":"http://pagoda-fastdfs.pagoda.com.cn:10501/miResourceMgr/group1/M00/00/CA/CmiU8FgK1ZuANWVyAABDinjM9aI038.jpg?width=180&height=180",
+    "price":7.2
+  },
+  {
+    "goodId":"0402",
+    "name":"A级-贵长奇异果（中）",
+    "imgUrl":"http://pagoda-fastdfs.pagoda.com.cn:10501/miResourceMgr/group1/M00/00/B6/CmiLkFf_HfCAN2ZbAAB-g-hPUPA255.jpg?width=180&height=180",
+    "price":4.6
+  }
+]

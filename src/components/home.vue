@@ -49,50 +49,8 @@
           </a>
         </nav>
         <div id="main">
-          <a href="">
-            <img src="../assets/home/main1.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main2.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main3.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main4.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main5.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main6.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main7.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main8.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main9.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main10.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main11.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main12.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main13.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main15.jpg">
-          </a>
-          <a href="">
-            <img src="../assets/home/main16.jpg">
+          <a href="" v-for="obj in listArr">
+            <img :src="obj.imgUrl">
           </a>
 
         </div>
@@ -101,6 +59,7 @@
 </template>
 
 <script>
+  const Err_Ok = 0;
   export default {
     name: 'home',
      components: {},
@@ -115,7 +74,22 @@
        paginationClickable :true,
        autoplayDisableOnInteraction : false,
      })
-   }
+   },
+   data() {
+        return {
+          listArr:{}
+        }
+      },
+      created() {
+      this.$http.get('/api/list').then((response) => {
+        response = response.body;
+        if(response.errno === Err_Ok){
+          this.listArr = response.data;
+          console.log(this.listArr)
+        }
+      })
+    }
+
   }
 </script>
 

@@ -23,6 +23,68 @@ var autoOpenBrowser = !!config.dev.autoOpenBrowser
 var proxyTable = config.dev.proxyTable
 
 var app = express()
+
+
+var goodsArr = require('../mock/goodInfo.json');
+var goods2Arr = require('../mock/goods2.json');
+var goods3Arr = require('../mock/goods3.json');
+var goods4Arr = require('../mock/goods4.json');
+var goods5Arr = require('../mock/goods5.json');
+var goods6Arr = require('../mock/goods6.json');
+var goods7Arr = require('../mock/goods7.json');
+var listArr = require('../mock/list.json');
+var apiRouter = express.Router();
+
+apiRouter.get('/goods',function(req,res){
+  res.json({
+    errno:0,
+    data:goodsArr
+  })
+})
+apiRouter.get('/list',function(req,res){
+  res.json({
+    errno:0,
+    data:listArr
+  })
+})
+apiRouter.get('/goods2',function(req,res){
+  res.json({
+    errno:0,
+    data:goods2Arr
+  })
+})
+apiRouter.get('/goods3',function(req,res){
+  res.json({
+    errno:0,
+    data:goods3Arr
+  })
+})
+apiRouter.get('/goods4',function(req,res){
+  res.json({
+    errno:0,
+    data:goods4Arr
+  })
+})
+apiRouter.get('/goods5',function(req,res){
+  res.json({
+    errno:0,
+    data:goods5Arr
+  })
+})
+apiRouter.get('/goods6',function(req,res){
+  res.json({
+    errno:0,
+    data:goods6Arr
+  })
+})
+apiRouter.get('/goods7',function(req,res){
+  res.json({
+    errno:0,
+    data:goods7Arr
+  })
+})
+app.use("/api",apiRouter)
+
 var compiler = webpack(webpackConfig)
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {

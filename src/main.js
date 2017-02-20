@@ -6,6 +6,8 @@ import router from './router'
 import './sass/common.scss'
 require('./../static/swiper.min.css')
 import Swiper from './../static/swiper.min.js'
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

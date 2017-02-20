@@ -14,6 +14,16 @@
 <script>
   export default {
     name: 'app'
+    // data(){
+    //   return{
+    //     listArr:{
+
+    //     }
+    //   }
+    // }
+    // created() {
+    //   this.$http.get('')
+    // }
   }
 </script>
 

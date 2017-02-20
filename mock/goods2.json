@@ -1,0 +1,20 @@
+[
+  {
+    "goodId":"0101",
+    "name":"招牌-高山水蜜桃（中）",
+    "imgUrl":"http://pagoda-fastdfs.pagoda.com.cn:10501/miResourceMgr/group1/M00/00/C7/CmiU8FgIMouAcPwUAAA7jlFL6hI344.jpg?width=180&height=180",
+    "price":19.1
+  },
+  {
+    "goodId":"0102",
+    "name":"招牌-阳光冬枣（中）",
+    "imgUrl":"http://pagoda-fastdfs.pagoda.com.cn:10501/miResourceMgr/group1/M00/00/98/CmiU8FfjobSATiPsAADHjgeHZjg576.jpg?width=180&height=180",
+    "price":5.2
+  },
+  {
+    "goodId":"0103",
+    "name":"招牌-冰糖梨（秋月）",
+    "imgUrl":"http://pagoda-fastdfs.pagoda.com.cn:10501/miResourceMgr/group1/M00/00/CC/CmiLkFgLMnaAH5BcAACar-87byw490.jpg?width=180&height=180",
+    "price":21.2
+  }
+]
